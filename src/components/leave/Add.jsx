@@ -22,7 +22,7 @@ const Add = () => {
     {
         e.preventDefault();
         try {
-            const response = await axios.post("https://ems-api-gamma.vercel.app/api/leave/add" ,leave ,{
+            const response = await axios.post("http://localhost:2111/api/leave/add" ,leave ,{
                 headers:
                 {
                     Authorization: `Bearer ${localStorage.getItem('token')}`

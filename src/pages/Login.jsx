@@ -14,7 +14,7 @@ const Login = () => {
         e.preventDefault()
 
         try {
-            const response = await axios.post("https://ems-api-gamma.vercel.app/api/auth/login",
+            const response = await axios.post("http://localhost:2111/api/auth/login",
                 { email, password }
             );
          if(response.data.success)

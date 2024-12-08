@@ -16,7 +16,7 @@ const List = () => {
     try {
 
 
-        const response = await axios.get(`https://ems-api-gamma.vercel.app/api/leave/${id}/${user.role}`, {
+        const response = await axios.get(`http://localhost:2111/api/leave/${id}/${user.role}`, {
 
 
             headers:

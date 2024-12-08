@@ -28,7 +28,7 @@ const Edit = () => {
         const fetchEmployee = async () => {
 
             try {
-                const response = await axios.get(`https://ems-api-gamma.vercel.app/api/employee/${id}`, {
+                const response = await axios.get(`http://localhost:2111/api/employee/${id}`, {
                     headers:
                     {
                         "Authorization": `Bearer ${localStorage.getItem('token')}`
@@ -79,7 +79,7 @@ const Edit = () => {
 
         try {
 
-            const response = await axios.put(`https://ems-api-gamma.vercel.app/api/employee/${id}`, employee, {
+            const response = await axios.put(`http://localhost:2111/api/employee/${id}`, employee, {
                 headers:
                 {
                     "Authorization": `Bearer ${localStorage.getItem('token')}`

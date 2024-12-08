@@ -24,7 +24,7 @@ const AddDepartment = () => {
         e.preventDefault()
         try{
             
-            const response= await axios.post('https://ems-api-gamma.vercel.app/api/department/add', department,{
+            const response= await axios.post('http://localhost:2111/api/department/add', department,{
                 headers :
                 {
                     "Authorization" :`Bearer ${localStorage.getItem('token')}`

@@ -33,7 +33,7 @@ const Setting = () => {
         }
         else{
             try{
-                const response= await axios.put("https://ems-api-gamma.vercel.app/api/setting/change-password",setting,
+                const response= await axios.put("http://localhost:2111/api/setting/change-password",setting,
                     {
                         headers:{
                             Authorization:`Bearer ${localStorage.getItem('token')}`,

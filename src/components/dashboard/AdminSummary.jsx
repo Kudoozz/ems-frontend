@@ -10,7 +10,7 @@ const AdminSummary = () => {
     const fetchSummary=async()=>
     {
       try {
-       const summary=await axios.get('https://ems-api-gamma.vercel.app/api/dashboard/summary',{
+       const summary=await axios.get('http://localhost:2111/api/dashboard/summary',{
         headers:
         {
           "Authorization": `Bearer ${localStorage.getItem('token')}`

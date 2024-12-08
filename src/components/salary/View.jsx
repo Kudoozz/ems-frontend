@@ -17,7 +17,7 @@ const View = () => {
         try {
 
 
-            const response = await axios.get(`https://ems-api-gamma.vercel.app/api/salary/${id}/${user.role}`, {
+            const response = await axios.get(`http://localhost:2111/api/salary/${id}/${user.role}`, {
 
 
                 headers:
