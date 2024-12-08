@@ -40,7 +40,7 @@ const Add = () => {
 
         try {
 
-            const response = await axios.post('http://localhost:2111/api/employee/add', formDataObj, {
+            const response = await axios.post('https://ems-api-gamma.vercel.app/api/employee/add', formDataObj, {
                 headers:
                 {
                     "Authorization": `Bearer ${localStorage.getItem('token')}`

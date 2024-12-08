@@ -21,7 +21,7 @@ const DepartmentList = () => {
   const fetchDepartments = async () => {
     setDeploading(true)
     try {
-      const response = await axios.get('http://localhost:2111/api/department', {
+      const response = await axios.get('https://ems-api-gamma.vercel.app/api/department', {
         headers:
         {
           "Authorization": `Bearer ${localStorage.getItem('token')}`

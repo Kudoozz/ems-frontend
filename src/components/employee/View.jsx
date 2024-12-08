@@ -11,7 +11,7 @@ const View = () => {
         const fetchEmployee = async () => {
 
             try {
-                const response = await axios.get(`http://localhost:2111/api/employee/${id}`, {
+                const response = await axios.get(`https://ems-api-gamma.vercel.app/api/employee/${id}`, {
                     headers:
                     {
                         "Authorization": `Bearer ${localStorage.getItem('token')}`
@@ -42,7 +42,7 @@ const View = () => {
             <h2 className='text-2xl font-bold mb-8 text-center'>Employee Details</h2>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
                 <div>
-                    <img src={`http://localhost:2111/${employee.userId.profileImage}`} className='rounded-full border-4 border-gray-500 h-72 w-72 object-fill' alt='' />
+                    <img src={`https://ems-api-gamma.vercel.app/${employee.userId.profileImage}`} className='rounded-full border-4 border-gray-500 h-72 w-72 object-fill' alt='' />
                 </div>
                 <div>
                     <div className='flex space-x-3 mb-5'>

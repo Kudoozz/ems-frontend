@@ -45,7 +45,7 @@ const Add = () => {
         e.preventDefault();
         try {
 
-            const response = await axios.post(`http://localhost:2111/api/salary/add`, salary, {
+            const response = await axios.post(`https://ems-api-gamma.vercel.app/api/salary/add`, salary, {
                 headers:
                 {
                     "Authorization": `Bearer ${localStorage.getItem('token')}`

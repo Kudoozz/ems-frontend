@@ -12,7 +12,7 @@ const Detail = () => {
         const fetchLeave = async () => {
 
             try {
-                const response = await axios.get(`http://localhost:2111/api/leave/detail/${id}`, {
+                const response = await axios.get(`https://ems-api-gamma.vercel.app/api/leave/detail/${id}`, {
                     headers:
                     {
                         "Authorization": `Bearer ${localStorage.getItem('token')}`
@@ -43,7 +43,7 @@ const Detail = () => {
     {
 
         try {
-            const response = await axios.put(`http://localhost:2111/api/leave/${id}`,{status}, {
+            const response = await axios.put(`https://ems-api-gamma.vercel.app/api/leave/${id}`,{status}, {
                 headers:
                 {
                     "Authorization": `Bearer ${localStorage.getItem('token')}`
@@ -71,7 +71,7 @@ const Detail = () => {
                 <h2 className='text-2xl font-bold mb-8 text-center'>Leave Detail</h2>
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
                     <div>
-                        <img src={`http://localhost:2111/${leave.employeeId.userId.profileImage}`} className='rounded-full border-4 border-gray-500 h-72 w-72 object-fill' alt='' />
+                        <img src={`https://ems-api-gamma.vercel.app/${leave.employeeId.userId.profileImage}`} className='rounded-full border-4 border-gray-500 h-72 w-72 object-fill' alt='' />
                     </div>
                     <div>
                         <div className='flex space-x-3 mb-2'>

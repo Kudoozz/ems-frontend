@@ -10,7 +10,7 @@ const Table = () => {
     const [filteredLeaves,setFilteredLeaves]=useState(null)
     const fetchLeaves = async () => {
         try {
-            const response = await axios.get('http://localhost:2111/api/leave', {
+            const response = await axios.get('https://ems-api-gamma.vercel.app/api/leave', {
                 headers:
                 {
                     "Authorization": `Bearer ${localStorage.getItem('token')}`
